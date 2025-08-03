@@ -1,0 +1,104 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2022",                                  /* Latest stable ES features for Node.js 18+ */
+    "lib": ["ES2022"],                                   /* Use matching library */
+    "experimentalDecorators": true,                      /* Enable decorators */
+    "emitDecoratorMetadata": true,                       /* Emit design-type metadata for decorators */
+
+    /* Modules */
+    "module": "ESNext",                                  /* ESNext modules for modern Node.js */
+    "rootDir": "./src",                                  /* Root directory of source files */
+    "moduleResolution": "node",                          /* Node.js-style module resolution */
+    "baseUrl": "./src",                                  /* Base directory for non-relative module names */
+    "paths": {                                           /* Path mapping for clean imports */
+      "@/*": ["*"],
+      "@types/*": ["types/*"],
+      "@utils/*": ["utils/*"],
+      "@tools/*": ["tools/*"],
+      "@core/*": ["core/*"],
+      "@config/*": ["config/*"]
+    },
+    "resolveJsonModule": true,                           /* Enable importing JSON files */
+    "allowSyntheticDefaultImports": true,                /* Allow default imports from modules with no default export */
+    "esModuleInterop": true,                             /* Enable interop between CommonJS and ES modules */
+
+    /* JavaScript Support */
+    "allowJs": false,                                    /* TypeScript only for better type safety */
+    "checkJs": false,                                    /* No JavaScript checking */
+
+    /* Emit */
+    "declaration": true,                                 /* Generate declaration files */
+    "declarationMap": true,                              /* Generate declaration source maps */
+    "sourceMap": true,                                   /* Generate source maps */
+    "outDir": "./build",                                 /* Output directory */
+    "removeComments": false,                             /* Keep comments for documentation */
+    "importHelpers": true,                               /* Import emit helpers from tslib */
+    "downlevelIteration": true,                          /* Full support for iterables */
+    "preserveConstEnums": true,                          /* Preserve const enums */
+    "preserveWatchOutput": true,                         /* Keep console clear in watch mode */
+
+    /* Interop Constraints */
+    "isolatedModules": true,                             /* Ensure each file can be transpiled separately */
+    "allowSyntheticDefaultImports": true,                /* Allow default imports */
+    "forceConsistentCasingInFileNames": true,           /* Ensure consistent casing */
+
+    /* Type Checking - All Strict Checks Enabled */
+    "strict": true,                                      /* Enable all strict type-checking options */
+    "noImplicitAny": true,                               /* Error on expressions with 'any' type */
+    "strictNullChecks": true,                            /* Enable strict null checks */
+    "strictFunctionTypes": true,                         /* Enable strict checking of function types */
+    "strictBindCallApply": true,                         /* Enable strict 'bind', 'call', and 'apply' */
+    "strictPropertyInitialization": true,                /* Enable strict property initialization */
+    "noImplicitThis": true,                              /* Error on 'this' expressions with 'any' type */
+    "useUnknownInCatchVariables": true,                 /* Use 'unknown' type in catch clause variables */
+    "alwaysStrict": true,                                /* Ensure 'use strict' in all files */
+    "noUnusedLocals": true,                              /* Report errors on unused locals */
+    "noUnusedParameters": true,                          /* Report errors on unused parameters */
+    "exactOptionalPropertyTypes": true,                  /* Differentiate between undefined and not present */
+    "noImplicitReturns": true,                           /* Report error when not all code paths return */
+    "noFallthroughCasesInSwitch": true,                 /* Report errors for fallthrough cases */
+    "noUncheckedIndexedAccess": true,                   /* Add undefined to index signature results */
+    "noImplicitOverride": true,                          /* Ensure overriding members are marked with 'override' */
+    "noPropertyAccessFromIndexSignature": true,          /* Require indexed access for indexed properties */
+    "allowUnusedLabels": false,                          /* Disallow unused labels */
+    "allowUnreachableCode": false,                       /* Disallow unreachable code */
+
+    /* Completeness */
+    "skipDefaultLibCheck": false,                        /* Type check default library declaration files */
+    "skipLibCheck": false,                               /* Type check all .d.ts files */
+
+    /* Advanced */
+    "composite": true,                                   /* Enable project compilation for faster builds */
+    "incremental": true,                                 /* Enable incremental compilation */
+    "tsBuildInfoFile": "./build/.tsbuildinfo",          /* Location for incremental build information */
+    "disableSourceOfProjectReferenceRedirect": true,     /* Disable preferring source files */
+    "disableSolutionSearching": true,                    /* Opt out of multi-project reference checking */
+    "disableReferencedProjectLoad": true                 /* Disable loading all projects on startup */
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "coverage",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/__tests__/**",
+    "**/__mocks__/**"
+  ],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": false,
+    "files": true,
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES2022",
+      "allowJs": true
+    }
+  }
+}
