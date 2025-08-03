@@ -1,0 +1,10 @@
+{
+  "default": [
+    {
+      "key": "architect_requirements",
+      "value": "Distributed Log Analysis System: Core components - Log Collectors (agents), Message Queue (Kafka/RabbitMQ), Stream Processors (Spark/Flink), Storage Layer (Elasticsearch/S3), Query Engine, API Gateway, Web Dashboard. External deps: Cloud providers (AWS/GCP), Monitoring (Prometheus), Alerting (PagerDuty). Security: OAuth2/JWT auth, TLS encryption, RBAC policies, audit logging. Scale: Handle 1TB+ logs/day, sub-second query response.",
+      "namespace": "default",
+      "timestamp": 1754242954621
+    }
+  ]
+}

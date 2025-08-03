@@ -1,0 +1,33 @@
+{
+  "name": "log-analyzer-swarm",
+  "version": "1.0.0",
+  "description": "Sistema de análise de logs com múltiplos agentes para processamento paralelo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "analyze": "node src/cli.js analyze",
+    "demo": "node src/demo.js"
+  },
+  "keywords": ["log", "analyzer", "multi-agent", "parallel", "swarm"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "eventemitter3": "^5.0.1",
+    "p-limit": "^3.1.0",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "yargs": "^17.7.2",
+    "winston": "^3.11.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
